@@ -12,13 +12,15 @@ const Profiles = () => {
     fetchProfiles()
   }, [])
 
+  console.log(profiles)
+
   return (
     <>
       <h1>Hello. This is a list of all the profiles.</h1>
       {profiles.length ? 
         <>
           {profiles.map(profile =>
-            <p key={profile._id}>{profile.name}</p>
+            <p key={profile._id}>{profile.name} | {profile.isActive ? "true" : "false"}</p>
           )}
         </>
       :
