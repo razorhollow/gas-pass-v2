@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 10%;
+}
+
+td {
+  padding: 10px 20px;
+}
+
+tr > button {
+  padding: 8px;;
+}
